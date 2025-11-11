@@ -11,7 +11,7 @@ single_cell_course
 cellranger*
 course_data*
 *.rds
-_site/
+
 # _freeze/
 .quarto/
 /.quarto/
@@ -22,5 +22,5 @@ _site/
 .sh_history
 .wget-hsts
 de_genes_FindAllMarkers.csv
-*.html
-data/
+
+

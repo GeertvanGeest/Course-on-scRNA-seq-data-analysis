@@ -15,8 +15,7 @@ course_data*
 # _freeze/
 .quarto/
 /.quarto/
-*cache*
-*_files*
+
 /.luarc.json
 ~$*
 .sh_history

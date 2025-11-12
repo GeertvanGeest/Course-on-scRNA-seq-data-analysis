@@ -2,6 +2,7 @@
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 This website is hosted at: https://bioinfocz.github.io/Course-on-scRNA-seq-data-analysis/
+
 Original SIB course is at: https://sib-swiss.github.io/single-cell-training/
 # Course website single cell transcriptomics
 
@@ -19,6 +20,8 @@ By the end of the course, participants will possess the following abilities:
   - Select enrichment analysis methods appropriate to the biological question and data.
   - Develop an scRNA-seq data analysis workflow from raw count matrix to differential gene expression with peer support and light guidance.
     
+![project logo](assets/logo_stranky2.png)
+
 ## Course organizators and teachers
 
 - Michal Kolar [ORCiD](https://orcid.org/0000-0002-4593-1525)

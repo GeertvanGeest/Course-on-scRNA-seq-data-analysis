@@ -279,7 +279,7 @@ contrast.mat <- limma::makeContrasts(ETV6.RUNX1 - PBMMC,
 
 ```
 
-Firt, we perform TMM normalization using edgeR, and then `limma` can perform the transformation with `voom`, fit the model, compute the contrasts and compute test statistics with `eBayes`:
+First, we perform TMM normalization using edgeR, and then `limma` can perform the transformation with `voom`, fit the model, compute the contrasts and compute test statistics with `eBayes`:
 
 ```{r}
 dge <- edgeR::calcNormFactors(y)  

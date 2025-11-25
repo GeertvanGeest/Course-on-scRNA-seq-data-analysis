@@ -34,7 +34,6 @@ Load the following packages:
 #| warning: false
 #| message: false
 library(clusterProfiler)
-library(ggiraph)
 library(enrichplot)
 ```
 

@@ -39,7 +39,7 @@ Introduction to scRNA-seq and techniques:
 
 ::: {.callout-note}
 ## If working independently
-The exercises below assume that you are enrolled in the course, and have access to the Rstudio server. **These exercises are not essential to run for the rest of the course**, so you can skip them. If you want to do them anyway, you can try to [install `cellranger` locally](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/installation) (only on Linux or WSL). In addition, you will need to download the references. You can get it by with this code (choose your OS):
+**These exercises are not essential to run for the rest of the course**, so we will can skip them. If you want to do them on your own, you can try to [install `cellranger` to your computing environment](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/installation) (only on Linux or WSL). In addition, you will need to download the references. You can get it by with this code (choose your OS):
 
 ::: {.panel-tabset}
 ## Linux/MacOS/WSL
@@ -76,34 +76,7 @@ You can find the input files here:
 
 ::: {.callout-important}
 ## Exercise
-Fill out the missing arguments (at `FIXME`) in the script below, and run it:
-
-```sh
-cellranger count \
---id=FIXME \
---sample=FIXME \
---transcriptome=FIXME \
---fastqs=FIXME \
---localcores=4 \
---create-bam=true
-```
-::: 
-
-
-::: {.callout-note}
-## This will take a while..
-Once started, the process will need approximately 15 minutes to finish. Have a coffee and/or have a look at the other exercises. 
-::: 
-
-::: {.callout-note}
-## Running a bash command with Rstudio
-You can run a bash script or command using the terminal tab in Rstudio server: 
-
-![](../assets/images/select_terminal_tab.png){width=300}
-:::
-
-::: {.callout-tip collapse="true"}
-## Answer
+Run the `cellranger count` using command below:
 
 ```sh
 cellranger count \
@@ -116,7 +89,13 @@ cellranger count \
 ```
 ::: 
 
-Have a look out the output directory (i.e. `~/ETV6-RUNX1_1/outs`). The analysis report (`web_summary.html`) is usually a good place to start. 
+
+::: {.callout-note}
+## This will take a while..
+Once started, the process will need approximately 15 minutes to finish. 
+::: 
+
+Have a look out the cellranger output directory (i.e. `~/ETV6-RUNX1_1/outs`). The analysis report (`web_summary.html`) is usually a good place to start. 
 
 ::: {.callout-note}
 

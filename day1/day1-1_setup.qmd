@@ -16,7 +16,6 @@ Choose one of the following:
 - **Enrolled:** if you are enrolled in a course with a teacher
 - **Own installation:** if you want to install packages on your own local Rstudio installation
 - **Docker:** if you want to use the docker image locally
-- **renkulab.io** if you want to easily  deploy the environment outside the course
 
 ::: {.panel-tabset}
 
@@ -80,14 +79,12 @@ The option `-v` mounts a local directory in your computer to the directory `/hom
 The part `sibswiss/training-singlecell-rstudio:2025.7` is the image we are going to load into the container. The image contains all the information about software and dependencies needed for this course. When you run this command for the first time it will download the image. Once it's on your computer, it will start immediately.
 :::
 
-## renkulab.io
-To simply run the environment, you can use [renku](https://renkulab.io). You can find the repository (including the image) here: [https://renkulab.io/projects/geert.vangeest/single-cell-training/](https://renkulab.io/projects/geert.vangeest/single-cell-training/). 
 
 :::
 
-### Create a project
+### Create a project (optional)
 
-Now that you have access to an environment with the required installations, we will set up a project in a new directory. On the top right choose the button **Project (None)** and select **New Project...**
+Now that you have access to an environment with the required installations, we can set up a project in a new directory. On the top right choose the button **Project (None)** and select **New Project...**
 
 ![](../assets/images/create_new_project.png){width=200}
 
@@ -103,29 +100,13 @@ Finally, type in the project name. This should be `single_cell_course`. Finish b
 
 ![](../assets/images/define_directory_name.png){width=300}
 
-Now that we have setup a project and a project directory (it is in `/home/rstudio/single_cell_course`), we can download the data that is required for this course. We will use the built-in terminal of Rstudio. To do this, select the **Terminal** tab:
+Now we have setup a project and a project directory (it is in `/home/rstudio/single_cell_course`).
 
-![](../assets/images/select_terminal_tab.png){width=300}
+### The course data
 
-### Downloading the course data
+The course data are provided in the RStudio home directory.
 
-To download and extract the dataset, copy-paste these commands inside the terminal tab:
-
-```{bash}
-#| output: false
-#| eval: false
-wget https://single-cell-transcriptomics.s3.eu-central-1.amazonaws.com/course_data.tar.gz
-tar -xvf course_data.tar.gz
-rm course_data.tar.gz
-```
-
-::: {.callout-note}
-## If on Windows
-
-If you're using Windows, you can directly open the [link](https://single-cell-transcriptomics.s3.eu-central-1.amazonaws.com/course_data.tar.gz) in your browser, and downloading will start automatically. Unpack the tar.gz file in the directory where you want to work in during the course.
-::: 
-
-Have a look at the data directory you have downloaded. It should contain the following:
+Have a look at the `course_data` directory. It should contain the following:
 
 ```
 course_data

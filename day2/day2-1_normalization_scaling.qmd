@@ -18,7 +18,7 @@ editor_options:
 
 ## Material
 
-{{< downloadthis ../assets/pdf/03_normalization_scaling.pdf dname="Dimensionality_Reduction_SIB" label="Download the presentation" icon="filetype-pdf" >}}
+{{< downloadthis ../assets/pdf/normalization dname="Normalization" label="Download the presentation" icon="filetype-pdf" >}}
 
 {{< video https://youtu.be/QS6ZH_41b4s?si=fvaNGkqjsIcxTEFn >}}
 
@@ -191,9 +191,11 @@ DefaultAssay(seu) <- "RNA"
 
 ### Save the dataset and clear environment
 
-Now, save the dataset so you can use it tomorrow:
+Now, save the dataset so you can use it later:
 
 ```{r}
+folder <- "day2"
+if (!dir.exists(folder)) dir.create(folder, recursive = TRUE)
 saveRDS(seu, "day2/seu_day2-1.rds")
 ```
 

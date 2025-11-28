@@ -22,7 +22,7 @@ Introduction to scRNA-seq and techniques:
 
 {{< video https://youtu.be/_ND6pEsf5Kg?si=BXzovujSUkWJ7x4h >}}
 
-{{< downloadthis ../assets/pdf/03_10x_genomics_single_cell.pdf dname="03_10x_genomics_single_cell" label="Download the presentation" icon="filetype-pdf" >}}
+{{< downloadthis ../assets/pdf/03_10x_genomics_single_cell_jk.pdf dname="03_10x_genomics_single_cell" label="Download the presentation" icon="filetype-pdf" >}}
 
 {{< video https://youtu.be/bP780yNt4XA?si=TOMg9O7NWF3UFG72 >}}
 

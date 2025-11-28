@@ -24,7 +24,7 @@ editor_options:
 
 ## Material
 
-{{< downloadthis ../assets/pdf/04_analysis_tools_qc.pdf dname="04_analysis_tools_qc" label="Download the presentation" icon="filetype-pdf" >}}
+{{< downloadthis ../assets/pdf/04_analysis_tools_qc_jk.pdf dname="analysis_tools" label="Download the presentation" icon="filetype-pdf" >}}
 
 {{< video https://youtu.be/YT7xeHVnTw4?si=YkNt4QOpgqMrLulb >}}
 
@@ -365,7 +365,11 @@ Quality control is a critical step in single-cell RNA sequencing analysis. Here 
 - **Document your decisions:** Always clearly document the QC metrics used, the thresholds applied, and the rationale behind your decisions. This ensures reproducibility and transparency of your analysis.
 :::
 
+Now, save the dataset so you can use it tomorrow:
+
 ```{r}
 #| echo: true
+folder <- "day1"
+if (!dir.exists(folder)) dir.create(folder, recursive = TRUE)
 saveRDS(seu, "day1/seu_day1-2.rds")
 ```

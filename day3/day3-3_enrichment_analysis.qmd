@@ -8,7 +8,7 @@ format: html
 
 ## Material
 
-{{< downloadthis ../assets/pdf/10_enrichment_analysis.pdf dname="enrichment_analysis" label="Download the presentation" icon="filetype-pdf" >}}
+{{< downloadthis ../assets/pdf/11_Enrichment_analysis_jk.pdf dname="Enrichment_analysis" label="Download the presentation" icon="filetype-pdf" >}}
 
 - [MSigDB](http://www.gsea-msigdb.org/gsea/msigdb/index.jsp)
 - `clusterProfiler` [vignette](https://bioconductor.org/packages/release/bioc/vignettes/clusterProfiler/inst/doc/clusterProfiler.html)
@@ -180,7 +180,15 @@ tum_vs_norm_enrich@result[tum_vs_norm_enrich@result$p.adjust < 0.05, 1:7] |>
 
 ```
 
-### Clear environment
+### Save data and clear environment
+
+```{r}
+#| echo: true
+
+saveRDS(tum_vs_norm, "day3/tum_vs_norm_go.rds")
+saveRDS(limma_de, "day3/enr_go.rds")
+saveRDS(proB, "day3/tum_vs_norm_enrich.rds")
+```
 
 Clear your environment:
 
